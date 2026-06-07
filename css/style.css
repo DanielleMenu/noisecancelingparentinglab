@@ -87,3 +87,16 @@ text-decoration: none;
     height: 42px;
     width: auto;
 }
+
+.product {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-card {
+    background: white;
+    padding: 48px;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
