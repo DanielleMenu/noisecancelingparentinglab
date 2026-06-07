@@ -74,3 +74,16 @@ margin: 0 12px;
 color: #666;
 text-decoration: none;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+}
+
+.logo img {
+    height: 42px;
+    width: auto;
+}
