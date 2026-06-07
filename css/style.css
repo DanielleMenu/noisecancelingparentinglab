@@ -11,9 +11,9 @@ padding: 24px 10%;
 }
 
 nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -78,14 +78,17 @@ text-decoration: none;
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
+
     font-family: "Cormorant Garamond", serif;
     font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .logo img {
-    height: 42px;
+    height: 48px;
     width: auto;
+    display: block;
 }
 
 .product {
