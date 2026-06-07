@@ -16,10 +16,6 @@ nav {
     align-items: center;
 }
 
-.logo {
-font-family: "Cormorant Garamond", serif;
-font-size: 1.8rem;
-}
 
 .nav-links a {
 margin-left: 24px;
@@ -75,21 +71,20 @@ color: #666;
 text-decoration: none;
 }
 
+
 .logo {
     display: flex;
     align-items: center;
-    gap: 14px;
-
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.8rem;
-    font-weight: 600;
+    gap: 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
 }
 
 .logo img {
-    height: 48px;
+    height: 42px;
     width: auto;
-    display: block;
 }
+
 
 .product {
     max-width: 800px;
