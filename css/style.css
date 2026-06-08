@@ -212,3 +212,29 @@ align-self: center;
 opacity: 0.9;
 }
 
+/* Product page */
+
+.product-page .hero {
+    padding: 40px 10% 30px;
+}
+
+.product-page section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.product-page h2 {
+    margin-bottom: 20px;
+}
+
+.product-page .coming-grid {
+    margin-top: 20px;
+}
+
+.product-page .card {
+    padding: 24px;
+}
+
+.product-page footer {
+    padding-top: 40px;
+}
