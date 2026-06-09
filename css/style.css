@@ -320,4 +320,151 @@ margin: 0 auto 40px;
 
 
 }
+css
+/* ==========================
+   Mobile Improvements
+   ========================== */
+
+@media (max-width: 768px) {
+
+    /* General layout */
+
+    header {
+        padding: 20px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .hero,
+    .products-preview,
+    .product,
+    .principles {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Navigation */
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+    }
+
+    /* Logo */
+
+    .logo {
+        font-size: 1.4rem;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    /* Hero */
+
+    .hero h1 {
+        font-size: 2.4rem;
+        line-height: 1.15;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Hero grid */
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-image {
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Headings */
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Cards */
+
+    .card {
+        padding: 24px;
+    }
+
+    .coming-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats */
+
+    .stats {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    /* Status pills */
+
+    .status-pill {
+        font-size: 1rem;
+        padding: 14px 24px;
+    }
+
+    /* Forms */
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Images */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
 
