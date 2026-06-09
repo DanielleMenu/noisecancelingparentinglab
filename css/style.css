@@ -238,3 +238,78 @@ opacity: 0.9;
 .product-page footer {
     padding-top: 40px;
 }
+
+
+.logo-link {
+text-decoration: none;
+color: inherit;
+}
+
+.hero-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.hero-text {
+text-align: left;
+}
+
+.hero-image img {
+width: 100%;
+max-width: 600px;
+height: auto;
+}
+
+.hero-pill {
+font-size: 1rem;
+padding: 12px 24px;
+}
+
+.stats {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px 10%;
+}
+
+.stat-card {
+background: white;
+padding: 24px;
+border-radius: 20px;
+text-align: center;
+}
+
+.products-preview {
+padding: 60px 10%;
+text-align: center;
+}
+
+.section-intro {
+max-width: 700px;
+margin: 0 auto 40px;
+}
+
+@media (max-width: 900px) {
+
+
+.hero-grid {
+    grid-template-columns: 1fr;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.stats {
+    grid-template-columns: 1fr;
+}
+
+
+}
+
