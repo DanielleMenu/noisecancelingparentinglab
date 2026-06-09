@@ -10,20 +10,29 @@
 <body>
 
 <header>
-    <nav>
+
+
+<nav>
+
+    <a href="index.html" class="logo-link">
+
         <div class="logo">
             <img src="images/logo-nav.png" alt="Noise Cancel Parenting Lab logo">
             <span>Noise Cancel Parenting Lab</span>
         </div>
 
-        <div class="nav-links">
-  <a href="index.html">Home</a>
-              <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+    </a>
 
-        </div>
-    </nav>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop Tools</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</nav>
+
+
 </header>
 
 <section class="about-mission">
@@ -50,23 +59,20 @@
 </p>
 
 <form
-    action="https://docs.google.com/forms/d/e/1FAIpQLSc2vX4TzCFE-fft7Eyn3h6LnCX0aOeduWLWSid3RNoJIfHQIg/formResponse"
+    action="https://formspree.io/f/mpqerdjj"
     method="POST"
     class="contact-form">
 
-    <input
-        type="text"
-        name="entry.2048969682"
-        placeholder="Name">
+    <input type="hidden" name="_next" value="https://noisecancelparentinglab.com/thank-you.html">
 
     <input
         type="email"
-        name="entry.642904584"
+        name="email"
         placeholder="Email"
         required>
 
     <textarea
-        name="entry.1575747584"
+        name="message"
         placeholder="How can we help?"></textarea>
 
     <button type="submit">

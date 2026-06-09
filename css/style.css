@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap');
+
 body {
 margin: 0;
 background: #F8F6F2;
@@ -122,15 +124,21 @@ line-height: 1.8;
     margin-top: 40px;
     padding: 20px 40px;
 
-    background: #eef2ea;
-    color: #556b4d;
+    background: #F9E4D4;
+    color: #B8734E;
 
     font-size: 1.4rem;
     font-weight: 600;
 
     border-radius: 999px;
 
-    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 24px rgba(229, 154, 109, 0.2);
+}
+
+.status-pill--development {
+    background: #eef2ea;
+    color: #556b4d;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 .coming-grid {
 display: grid;
