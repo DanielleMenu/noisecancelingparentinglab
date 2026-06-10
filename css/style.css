@@ -14,15 +14,58 @@ padding: 24px 10%;
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between; /* logo left, links center, socials right */
+    gap: 16px;
+    /* preserve any existing padding/margins from existing rules */
 }
 
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex: 1 1 auto; /* allow center section to shrink/expand */
+    justify-content: center;
+}
 
 .nav-links a {
 margin-left: 24px;
 text-decoration: none;
 color: #1F2328;
+}
+
+.nav-social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.nav-social .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 160ms ease, color 160ms ease, opacity 160ms ease;
+    opacity: 0.95;
+}
+
+.nav-social svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.nav-social .social-link:hover,
+.nav-social .social-link:focus {
+    transform: translateY(-3px) scale(1.05);
+    color: #000; /* subtle contrast increase matching minimalist palette */
+    opacity: 1;
+    outline: none;
 }
 
 .hero {
@@ -303,6 +346,84 @@ max-width: 700px;
 margin: 0 auto 40px;
 }
 
+/* Footer - minimalist social icons and policy links */
+footer {
+    text-align: center;
+    padding: 36px 16px;
+    color: #333; /* keep consistent with site palette */
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Social icons container sits above the policy links */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 12px;
+}
+
+/* Icons slightly larger than text and using currentColor for minimalist look */
+.footer-social .social-link {
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    transition: transform 180ms ease, opacity 180ms ease, color 180ms ease;
+    opacity: 0.95;
+}
+
+/* Hover/focus subtle effect */
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
+    transform: translateY(-3px) scale(1.05);
+    opacity: 1;
+    color: #000; /* small contrast increase on hover */
+    outline: none;
+}
+
+/* Keep SVGs using currentColor so they adapt to theme */
+.footer-social svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+/* Policy links centered and slightly muted */
+.footer-policies {
+    display: inline-flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-policies a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.9;
+    transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.footer-policies a:hover,
+.footer-policies a:focus {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* Responsive tweak: slightly increase icon spacing on small screens */
+@media (max-width: 420px) {
+    .footer-social {
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+    .footer-social .social-link { width: 34px; height: 34px; }
+    .footer-social svg { width: 18px; height: 18px; }
+}
+
 @media (max-width: 900px) {
 
 
@@ -319,5 +440,80 @@ margin: 0 auto 40px;
 }
 
 
+}
+
+/* Navigation: keep existing layout but ensure socials sit at far right and remain responsive */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo left, links center, socials right */
+    gap: 16px;
+    /* preserve any existing padding/margins from existing rules */
+}
+
+/* Keep the existing .nav-links behavior; ensure it can shrink on small screens */
+.nav-links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex: 1 1 auto; /* allow center section to shrink/expand */
+    justify-content: center;
+}
+
+/* Social icons on the right */
+.nav-social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+/* Social link visual */
+.nav-social .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 160ms ease, color 160ms ease, opacity 160ms ease;
+    opacity: 0.95;
+}
+
+/* Slightly larger icons than nav text; SVG inherits currentColor */
+.nav-social svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+/* Hover/focus subtle effect */
+.nav-social .social-link:hover,
+.nav-social .social-link:focus {
+    transform: translateY(-3px) scale(1.05);
+    color: #000; /* subtle contrast increase matching minimalist palette */
+    opacity: 1;
+    outline: none;
+}
+
+/* Mobile responsiveness: reduce sizes and spacing, keep layout intact */
+@media (max-width: 720px) {
+    .nav-links { gap: 12px; }
+    .nav-social { gap: 8px; }
+    .nav-social .social-link { width: 34px; height: 34px; }
+    .nav-social svg { width: 18px; height: 18px; }
+}
+
+/* Small viewport: ensure nav items wrap gracefully */
+@media (max-width: 520px) {
+    nav {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .nav-links {
+        justify-content: flex-start;
+        gap: 10px;
+    }
 }
 
