@@ -517,3 +517,156 @@ nav {
     }
 }
 
+/* ==========================
+   Mobile Improvements
+   ========================== */
+
+@media (max-width: 768px) {
+
+    /* General layout */
+
+    header {
+        padding: 20px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .hero,
+    .products-preview,
+    .product,
+    .principles {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+    font-size: 0.85rem;
+}
+    .nav-links a {
+        margin-left: 0;
+    }
+
+/* Logo */
+
+.logo {
+    justify-content: center;
+}
+
+.logo {
+    gap: 8px;
+}
+
+.logo span {
+    font-size: 0.95rem;
+    line-height: 1.1;
+}
+
+.logo img {
+    height: 28px;
+}
+
+    /* Hero */
+
+.hero h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Hero grid */
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-image {
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Headings */
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Cards */
+
+    .card {
+        padding: 24px;
+    }
+
+    .coming-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats */
+
+    .stats {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    /* Status pills */
+
+    .status-pill {
+        font-size: 1rem;
+        padding: 14px 24px;
+    }
+
+    /* Forms */
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Images */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+
