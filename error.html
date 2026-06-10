@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Noise Cancel Parenting Lab</title>
+    <meta name="description" content="The page you requested could not be found. Return to the homepage or contact us for help.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fffdf9;
+            color: #2f2f2f;
+        }
+
+        main {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .error-card {
+            max-width: 620px;
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid #e8e2d8;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #8a5a2b;
+            margin-bottom: 0.5rem;
+        }
+
+        .error-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .error-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: #5b5b5b;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-actions a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 0.8rem 1.2rem;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .error-actions a.primary {
+            background: #8a5a2b;
+            color: #fff;
+        }
+
+        .error-actions a.secondary {
+            background: #f6efe8;
+            color: #5a3a1e;
+        }
+
+        .error-actions a:hover {
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <img src="images/logo-nav.png" alt="Noise Cancel Parenting Lab logo">
+                    <span>Noise Cancel Parenting Lab</span>
+                </div>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop Tools</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="error-card" aria-labelledby="error-title">
+            <div class="error-code">404</div>
+            <h1 id="error-title" class="error-title">Oops! This page is missing.</h1>
+            <p class="error-text">
+                The page you were looking for may have been moved, deleted, or never existed.
+                You can head back home or reach out to us if you need help finding something.
+            </p>
+            <div class="error-actions">
+                <a class="primary" href="index.html">Go to Homepage</a>
+                <a class="secondary" href="contact.html">Contact Us</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
